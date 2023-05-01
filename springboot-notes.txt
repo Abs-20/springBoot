@@ -1,0 +1,82 @@
+Rest web service
+
+// modern app send amd receive Json data because every device has it user interface
+// we generate the Json data at the backend 
+// er return actual instances not only redirect to view
+//data need to be serialized to json form 
+
+
+
+functional test 
+
+//
+
+
+application context:
+
+// we can see how many beans are available 
+//also what is the names for these beans 
+//we can add bean to the app context 
+//@Component -> we cant add more than one beans using the annotation 
+//we put before the class to consider it as beans 
+
+
+java config approach
+
+// @SpringbootApplication is configuration
+
+rest template class 
+
+// open-notify.org ->  web site provide api call return data in json
+   Astro result class -> list<Assignment>
+                        number of the people 
+                        message 
+   Assignment class -> name
+			     craft
+
+
+Reactive WebClient class:
+
+// to perform http request ......
+// getForObject from rest = get 
+// schedual the call and move to the other function without waiting for response(rest wait for response)
+// the data retrived will be a mono (promise that the object class will be eventually there )
+// we need to add webflux dependency
+// the request dont block the line so it can take more than request until the request cameback (fast food example)
+
+ 
+
+
+Accessing the google Geocoder
+
+// application.prperties file to customize the bean
+// google geocoder -> transfer the address into location on the map
+//the output format cold be json(recommended) or xml
+//application property -> we can set the letter case we want to implement ,ex frome SNAKE_CASE to CamelCase  (property naming strategy)
+
+
+
+Java persistance api(JPA) (Jakarta)
+
+
+// the provider generate the sql for you (we just explain how you domain mapped to these tables)
+// 
+ 
+
+
+transactions in Spring
+
+// @Transactiona (readOnly=true) only with select query 
+
+
+Spring Data JPA
+
+// 
+
+
+
+
+
+//ResponseEntity.of: when we searrch it will return the give body with status OK or empty body with not FOUND status
+
+
